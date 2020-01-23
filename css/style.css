@@ -29,10 +29,11 @@ body {
 .main_chat {
   height: 100%;
   background-color: silver;
+  display: flex;
 }
 .main_navbar{
   height: 100%;
-  width: 350px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -187,4 +188,32 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   color: grey;
   padding: 0px 5px;
+}
+h1 .orario {
+  text-decoration: none;
+}
+/* parte destra della chat */
+.navbar_main_right {
+  width: 100%;
+}
+header {
+  height: 80px;
+  background-color:#e9e9e9;
+  border-left:2px solid lightgrey;
+}
+.header_flex {
+  display: flex;
+}
+.AAAheader_flex_avatar img {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+.AAAheader_flex_avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
