@@ -9,6 +9,9 @@ h1 {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 5px;
 }
+.padding_left {
+  padding-left: 20px;
+}
 body {
   background-image: linear-gradient(to bottom, #128C7E 0px, #128C7E 15vh, #DDDBD1 15vh, #D2DBDC 100% );
 }
@@ -117,7 +120,7 @@ body {
 }
 /* barra ricerca sotto le notifiche */
 .bar_search {
-  background-color: lightgrey;
+  background-color: #f7f7f7;
   height: 50px;
   width: 100%;
   display: flex;
@@ -145,7 +148,43 @@ body {
   justify-content: center;
 }
 .nav_search_inline span a {
-  color: grey;
+  color: lightgrey;
   font-size: 18px;
   padding-left: 10px;
+}
+/* CONTATTI */
+.contatti {
+  height: 90%;
+  display: flex;
+  background-color: #f7f7f7;
+}
+.background_grey {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+.contatti_list {
+  list-style: none;
+}
+.contatti_list li {
+  height: 80px;
+  background-color: white;
+}
+.contatti .contatti_list img {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+.contatti_list li {
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+.avatar_notifica_rigth p {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: grey;
+  padding: 0px 5px;
 }
