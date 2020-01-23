@@ -3,6 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+h1 {
+  font-size: 14px;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 5px;
+}
 body {
   background-image: linear-gradient(to bottom, #128C7E 0px, #128C7E 15vh, #DDDBD1 15vh, #D2DBDC 100% );
 }
@@ -27,7 +33,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: white;
-  border-right: 2px solid lightgrey;
 }
 .main_navbar_header {
   height: 80px;
@@ -48,6 +53,7 @@ body {
 }
 .settings_profilo ul li {
   padding: 10px;
+  font-size: 20px;
 }
 .settings_profilo ul li a {
   color: grey;
@@ -55,7 +61,7 @@ body {
 .profilo_personal img {
   width: 40px;
   height: 40px;
-  background-color: black;
+  background-color: white;
   border-radius: 50%;
 }
 .list_style_icone {
@@ -65,3 +71,49 @@ body {
   align-self: center;
   padding: 10px;
 }
+/* NOTIFICHE MESSAGGI */
+/* PARTE IN BLU */
+.nofitiche_messaggi {
+  height: 90px;
+  background-color: #76d2ff;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.nofitiche_messaggi span a {
+  font-size: 20px;
+  color: #76d2ff;
+}
+.nofitiche_messaggi span {
+  display: flex;
+  align-items: center;
+}
+.avatar_notifica {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+.avatar_notifica_left {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.avatar_notifica_rigth {
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  justify-content: center;
+}
+.avatar_notifica_rigth span {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: grey;
+  text-decoration: underline;
+  padding: 0px 5px;
+}
+/* barra ricerca sotto le notifiche */
