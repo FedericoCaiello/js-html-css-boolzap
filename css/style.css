@@ -112,7 +112,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.avatar_notifica_rigth span {
+.avatar_notifica_rigth span a {
   font-size: 14px;
   font-family: 'Source Sans Pro', sans-serif;
   color: grey;
