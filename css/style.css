@@ -19,6 +19,7 @@
 .main {
   position: relative;
 }
+/* main chat */
 .main_chat {
   width: 80%;
   height: 90%;
@@ -26,4 +27,47 @@
   top: 30px;
   left: 10%;
   background-color: silver;
+}
+.main_navbar{
+  height: 100%;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-right: 2px solid lightgrey;
+}
+.main_navbar_header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.profilo_personal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.settings_profilo {
+  display: flex;
+  justify-content: flex-end;
+}
+.settings_profilo ul li {
+  padding: 10px;
+}
+.settings_profilo ul li a {
+  color: grey;
+}
+.profilo_personal img {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+}
+.list_style_icone {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  align-self: center;
+  padding: 10px;
 }
