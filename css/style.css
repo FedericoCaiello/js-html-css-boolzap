@@ -10,7 +10,7 @@ h1 {
   padding: 5px;
 }
 .padding_left {
-  padding-left: 20px;
+  padding-left: 15px;
 }
 body {
   background-image: linear-gradient(to bottom, #128C7E 0px, #128C7E 15vh, #DDDBD1 15vh, #D2DBDC 100% );
@@ -76,7 +76,7 @@ body {
   padding: 10px;
 }
 /* NOTIFICHE MESSAGGI */
-/* PARTE IN BLU */
+/* PARTE IN celeste */
 .nofitiche_messaggi {
   height: 90px;
   background-color: #76d2ff;
@@ -105,6 +105,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .avatar_notifica_rigth {
   display: flex;
@@ -142,14 +143,14 @@ body {
 .nav_search_inline p {
   font-size: 12px;
   font-family: 'Source Sans Pro', sans-serif;
-  color: lightgrey;
+  color: grey;
   margin-left: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .nav_search_inline span a {
-  color: lightgrey;
+  color: grey;
   font-size: 18px;
   padding-left: 10px;
 }
@@ -158,7 +159,11 @@ body {
   height: 90%;
   display: flex;
   background-color: #f7f7f7;
+  overflow-y: auto;
 }
+/* .contact-name {
+
+} */
 .background_grey {
   width: 95%;
   display: flex;
@@ -216,4 +221,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.main_background_img {
+  background-image: url(../img/mine.jpg);
+  height: 80%;
+  overflow-y: scroll;
 }
