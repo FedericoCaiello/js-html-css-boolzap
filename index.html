@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Boolzap</title>
   </head>
   <body>
@@ -49,7 +50,7 @@
             <section class="contatti">
               <div class="background_grey">
                 <ul class="contatti_list">
-                  <li class="padding_left">
+                  <li class="padding_left" data-contact="0">
                     <div class="avatar_notifica_left">
                       <img src="img/michele.png" alt="">
                     </div>
@@ -184,25 +185,25 @@
               </div>
             </header>
             <!-- MESSAGGI -->
-            <main class="main_background_img">
-              <div class="message sent">
-                <div class="message_top">
-                  <p class="message_text">Ciao come stai?</p>
-                  <i class="fa fa-chevron-down f-right message-options"></i>
+            <main class="main_background_img active" data-contact="0">
+                <div class="message sent">
+                  <div class="message_top">
+                    <p class="message_text">Ciao come stai?</p>
+                    <i class="fa fa-chevron-down f-right message-options"></i>
+                  </div>
+                  <div class="message-bottom">
+                    <small class="message_time">12:40</small>
+                  </div>
                 </div>
-                <div class="message-bottom">
-                  <small class="message_time">12:40</small>
+                <div class="message received">
+                  <div class="message_top">
+                    <p class="message_text">Ciao come stai?</p>
+                    <i class="fa fa-chevron-down f-right message-options"></i>
+                  </div>
+                  <div class="message-bottom">
+                    <small class="message_time">12:40</small>
+                  </div>
                 </div>
-              </div>
-              <div class="message received">
-                <div class="message_top">
-                  <p class="message_text">Ciao come stai?</p>
-                  <i class="fa fa-chevron-down f-right message-options"></i>
-                </div>
-                <div class="message-bottom">
-                  <small class="message_time">12:40</small>
-                </div>
-              </div>
             </main>
             <!-- footer -->
             <footer>
@@ -211,13 +212,10 @@
                   <i class="far fa-smile"></i>
                 </div>
                 <input type="text" class="send-message" value="" placeholder="Scrivi un messaggio">
-                <div class="footer_icone">
+                <div class="footer_icone icon-send">
                   <i class="fas fa-paper-plane"></i>
-
                 </div>
-
               </div>
-
             </footer>
           </div>
         </section>
@@ -236,8 +234,8 @@
           <small class="message_time"></small>
         </div>
       </div>
-
     </div>
+    <script src="js/script.js" charset="utf-8"></script>
 
 
   </body>

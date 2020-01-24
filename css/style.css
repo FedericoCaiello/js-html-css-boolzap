@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+.template {
+  display: none;
+}
 h1 {
   font-size: 14px;
   color: black;
@@ -165,9 +168,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.text_contatti {
-
-}
 .avatar_notifica_contatti{
   display: flex;
   justify-content: space-between;
@@ -238,10 +238,14 @@ header {
   justify-content: center;
 }
 .main_background_img {
+  display: none;
   background-image: url(../img/mine.jpg);
   height: 80%;
   overflow-y: scroll;
   padding: 40px;
+}
+.main_background_img.active {
+  display: block;
 }
 #setting_contatto {
   width: 25%;
@@ -281,7 +285,7 @@ header {
   clear: both;
   background-color: white;
 }
-/* footer barra */
+/* footer bars */
 .footer {
   display: flex;
   justify-content: space-around;
