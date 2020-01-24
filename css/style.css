@@ -252,6 +252,7 @@ header {
   color: grey;
   padding: 0px 5px;
 }
+/* messaggi main */
 .message {
   min-width: 25%;
   max-width: 60%;
@@ -279,4 +280,33 @@ header {
   float: left;
   clear: both;
   background-color: white;
+}
+/* footer barra */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 98px;
+  background-color: #e9e9e9;
+}
+.footer_icone {
+  color: grey;
+  font-size: 30px;
+  width: 50px
+}
+.footer_icone_smile {
+  color: grey;
+  font-size: 30px;
+  width: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: center;
+}
+
+.footer .send-message {
+  width: 80%;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 20px;
+  border: 3px solid lightgrey;
 }
