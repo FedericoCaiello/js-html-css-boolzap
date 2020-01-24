@@ -160,6 +160,19 @@ body {
   background-color: #f7f7f7;
   overflow-y: auto;
 }
+.box_contatti {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text_contatti {
+
+}
+.avatar_notifica_contatti{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 /* .contact-name {
 
 } */
@@ -187,14 +200,17 @@ body {
   display: flex;
   border-bottom: 1px solid lightgrey;
 }
-.avatar_notifica_rigth p {
+.text_contatti p {
   font-size: 14px;
   font-family: 'Source Sans Pro', sans-serif;
   color: grey;
   padding: 0px 5px;
 }
-h1 .orario {
+.orario {
   text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 /* parte destra della chat */
 .navbar_main_right {
@@ -225,4 +241,13 @@ header {
   background-image: url(../img/mine.jpg);
   height: 80%;
   overflow-y: scroll;
+}
+#setting_contatto {
+  width: 25%;
+}
+#ultimo_accesso {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: grey;
+  padding: 0px 5px;
 }
