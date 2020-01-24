@@ -123,36 +123,35 @@ body {
 /* barra ricerca sotto le notifiche */
 .bar_search {
   background-color: #f7f7f7;
-  height: 50px;
+  height: 40px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.nav_search {
-  width: 95%;
-  height: 30px;
+ .nav_search {
+  width: 70%;
+  height: 25px;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-self: center;
+  border: 0px solid white;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
 }
 .nav_search_inline {
   display: flex;
+  flex-flow: column-reverse;
+  justify-content: center;
   padding: 6px;
 }
-.nav_search_inline p {
-  font-size: 12px;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: grey;
-  margin-left: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.nav_search_inline span a {
+.nav_search_inline a {
   color: grey;
   font-size: 18px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 /* CONTATTI */
 .contatti {
