@@ -39,6 +39,7 @@ function sendMessage () {
     }, 1000);
   }
 }
+// Ricerca utenti: scrivendo qualcosa nell’input a sinistra, vengono visualizzati solo i contatti il cui nome contiene le lettere inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
 
 $(document).ready(function () {
   $('.nav_search_inline .fa-search').click(function () {
@@ -67,8 +68,3 @@ function addZero(number) {
   }
   return number;
 }
-
-
-
-// Milestone 2
-// Ricerca utenti: scrivendo qualcosa nell’input a sinistra, vengono visualizzati solo i contatti il cui nome contiene le lettere inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
