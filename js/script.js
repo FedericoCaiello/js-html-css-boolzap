@@ -43,10 +43,13 @@ function sendMessage () {
 
 $(document).ready(function () {
   $('.nav_search_inline .fa-search').click(function () {
+    // qui sotto va il valore
     var ricerca = $('.nav_search').val();
+    // ciclo while con lunghezza del nome
+    // variabili con il testo all'interno dell'attributo(parole in rosso)
     var i = 0;
     while (i < $('.contact-name').length) {
-      var nome = $('.contatti_list h1').eq(i).text();
+      var nome = $('.contatti_list h3').eq(i).text();
       var cancellaContatto = $('.contatti_list li').eq(i);
       if ( nome.includes(ricerca)) {
         cancellaContatto.show();
