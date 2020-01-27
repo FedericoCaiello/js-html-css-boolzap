@@ -83,10 +83,17 @@ $(document).ready(function () {
     chatVar.addClass('active');
 
   });
+  $('.main_background_img .message_top').click(function (){
+     var posizione = $(this).find('ul');
+     posizione.toggleClass('template');
+    console.log('cicaico');
+  });
+  $('.message a').click(function (){
+    var cancellaMessaggio = $(this).parents('message_top');
+    cancellaMessaggio.remove();
+
+  });
 });
-
-
-
 
 function addZero(number) {
   if(number < 10) {
