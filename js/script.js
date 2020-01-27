@@ -74,10 +74,14 @@ $(document).ready(function () {
       i++;
     }
   });
+
   $('.contatti li').click(function (){
     var posizioneUtente = $(this).index();
-    console.log(posizioneUtente);
-    $('main_background_img').index()
+    var chatNascondere = $('.main_background_img.active');
+    chatNascondere.removeClass('active');
+    var chatVar = $('.main_background_img').eq(posizioneUtente);
+    chatVar.addClass('active');
+
   });
 });
 
