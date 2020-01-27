@@ -303,6 +303,9 @@ header {
   text-align: center;
   padding: 8px 0px;
 }
+.dropdown li:hover {
+  background-color: lightgrey;
+}
 /* footer bars */
 .footer {
   display: flex;
@@ -333,5 +336,8 @@ header {
   border: 3px solid lightgrey;
 }
 .template {
+  display: none;
+}
+.display-none {
   display: none;
 }

@@ -85,10 +85,10 @@ $(document).ready(function () {
   });
   $('.main_background_img .message_top').click(function (){
      var posizione = $(this).find('ul');
-     posizione.toggleClass('template');
+     posizione.toggleClass('display-none');
     console.log('cicaico');
   });
-  $('.message a').click(function (){
+  $('.main_background_img .message a').click(function (){
     var cancellaMessaggio = $(this).parents('message_top');
     cancellaMessaggio.remove();
 
@@ -101,15 +101,3 @@ function addZero(number) {
   }
   return number;
 }
-
-
-
-
-
-// funzione con scroll della pagina verso il basso
-
-// function scrollBar(){
-  //   var heightcontainer = $('.main_background_img.active').height();
-  //   console.log(heightcontainer);
-  //   $('.messages-wrapper').scrollTop(heightcontainer);
-  // }
