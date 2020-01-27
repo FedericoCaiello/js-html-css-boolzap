@@ -171,9 +171,6 @@ body {
   justify-content: space-between;
   align-items: baseline;
 }
-/* .contact-name {
-
-} */
 .background_grey {
   width: 95%;
   display: flex;
@@ -185,6 +182,9 @@ body {
 .contatti_list li {
   height: 80px;
   background-color: white;
+}
+.contatti li:hover {
+  background-color: lightgrey;
 }
 .contatti .contatti_list img {
   width: 45px;

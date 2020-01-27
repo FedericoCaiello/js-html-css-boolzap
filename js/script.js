@@ -9,7 +9,6 @@ function sendMessage () {
 
   if(textMessage.length != 0) {
     var newMessage = $('.template .message').clone();
-    console.log(newMessage);
 
     newMessage.find('.message_text').text(textMessage);
 
@@ -44,26 +43,46 @@ function sendMessage () {
 $(document).ready(function () {
   $('.nav_search_inline .fa-search').click(function () {
     // qui sotto va il valore
-    var ricerca = $('.nav_search').val();
+    var ricerca = $('.nav_search').val().toLowerCase();
     // ciclo while con lunghezza del nome
     // variabili con il testo all'interno dell'attributo(parole in rosso)
     var i = 0;
     while (i < $('.contact-name').length) {
-      var nome = $('.contatti_list h3').eq(i).text();
+      var nome = $('.contatti_list h3').eq(i).text().toLowerCase();
       var cancellaContatto = $('.contatti_list li').eq(i);
       if ( nome.includes(ricerca)) {
         cancellaContatto.show();
-        console.log('il nome esiste');
       }
       else {
         cancellaContatto.hide();
-        console.log('il nome non ci sta');
       }
-      console.log(nome);
       i++;
     }
   });
+  $('.bar_search input').keyup(function () {
+    var ricerca = $('.nav_search').val().toLowerCase();
+    var i = 0;
+    while (i < $('.contact-name').length) {
+      var nome = $('.contatti_list h3').eq(i).text().toLowerCase();
+      var cancellaContatto = $('.contatti_list li').eq(i);
+      if ( nome.includes(ricerca)) {
+        cancellaContatto.show();
+      }
+      else {
+        cancellaContatto.hide();
+      }
+      i++;
+    }
+  });
+  $('.contatti li').click(function (){
+    var posizioneUtente = $(this).index();
+    console.log(posizioneUtente);
+    $('main_background_img').index()
+  });
 });
+
+
+
 
 function addZero(number) {
   if(number < 10) {
@@ -71,3 +90,15 @@ function addZero(number) {
   }
   return number;
 }
+
+
+
+
+
+// funzione con scroll della pagina verso il basso
+
+// function scrollBar(){
+  //   var heightcontainer = $('.main_background_img.active').height();
+  //   console.log(heightcontainer);
+  //   $('.messages-wrapper').scrollTop(heightcontainer);
+  // }
