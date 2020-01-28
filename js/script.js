@@ -82,14 +82,30 @@ $(document).ready(function () {
     chatVar.addClass('active');
 
   });
-  $('.main_background_img .message_top').click(function (){
+  $(document).on('click', '.main_background_img .message_top', function (){
      var posizione = $(this).find('ul');
+     console.log('posizione');
      posizione.toggleClass('display-none');
     console.log('cicaico');
   });
   $(document).on('click','.main_background_img .message a', function (){
-    var cancellaMessaggio = $(this).parents('message_top');
+    var cancellaMessaggio = $(this).parents('.message');
     cancellaMessaggio.remove();
+  });
+  $(document).on('click', ' ul li', function(){
+    var data = $(this).attr('data-contact');
+    var selector = '.main_background_img[data-contact="'+ data +'"]';
+    $('.main_background_img').removeClass('.active');
+    $(selector).addClass('active');
+    $(' ul li').removeClass('.active');
+    $(this).addClass('active');
+
+    var name = $(this).find('.contact-name').text();
+    var time = $(this).find('.orario').text();
+    var img = $(this).find('.avatar_notifica_left img').attr('src');
+    $('.navbar_main_right .avatar_notifica_rigth h3').text(name);
+    $('.navbar_main_right .avatar_notifica_rigth p').text(time);
+    $('.navbar_main_right .AAAheader_flex_avatar img'). attr('src', img);
   });
 });
 
