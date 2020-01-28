@@ -294,6 +294,7 @@ header {
   position: absolute;
   top: 30px;
   right: -10px;
+  z-index: 2;
 }
 .dropdown li a{
   font-size: 18px;
