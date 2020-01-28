@@ -263,6 +263,7 @@ header {
   border-radius: 5px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
+  position: relative;
 }
 .message_top {
   display: flex;
@@ -291,8 +292,8 @@ header {
   background-color: white;
   list-style: none;
   position: absolute;
-  top: 190px;
-  right: 150px;
+  top: 30px;
+  right: -10px;
 }
 .dropdown li a{
   font-size: 18px;

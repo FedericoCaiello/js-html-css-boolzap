@@ -69,12 +69,11 @@ $(document).ready(function () {
         cancellaContatto.show();
       }
       else {
-        cancellaContatto.hide();
+      cancellaContatto.hide();
       }
       i++;
     }
   });
-
   $('.contatti li').click(function (){
     var posizioneUtente = $(this).index();
     var chatNascondere = $('.main_background_img.active');
@@ -91,7 +90,6 @@ $(document).ready(function () {
   $('.main_background_img .message a').click(function (){
     var cancellaMessaggio = $(this).parents('message_top');
     cancellaMessaggio.remove();
-
   });
 });
 
