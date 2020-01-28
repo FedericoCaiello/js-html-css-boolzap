@@ -87,7 +87,7 @@ $(document).ready(function () {
      posizione.toggleClass('display-none');
     console.log('cicaico');
   });
-  $('.main_background_img .message a').click(function (){
+  $(document).on('click','.main_background_img .message a', function (){
     var cancellaMessaggio = $(this).parents('message_top');
     cancellaMessaggio.remove();
   });
